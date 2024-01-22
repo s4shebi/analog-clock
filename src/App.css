@@ -36,3 +36,34 @@
     transform: rotate(360deg);
   }
 }
+
+.clock {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  border: 2px solid #000000;
+  border-radius: 50%;
+  margin: 50px auto;
+}
+
+.hand {
+  position: absolute;
+  width: 50%;
+  height: 2px;
+  background-color: #333;
+  top: 50%;
+  /*left: 30%;*/
+  transform-origin: 100%;
+  /*transform: translate(-50%, -50%);*/
+}
+
+.seconds1 {
+  background-image: url("../assets/seconds.png");
+}
+.minutes {
+  background-image: url("../assets/minutes.png");
+}
+.hours {
+  background-image: url("../assets/hours.png");
+  height: 5px;
+}
